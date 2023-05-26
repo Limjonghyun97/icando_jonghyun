@@ -1,0 +1,267 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 150px auto 300px;
+    height: fit-content;
+}
+
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+section > div > div > h1 {
+    font-size: 3em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 80%;
+    background-color: white;
+}
+
+.loginSelect, .joinSelect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    min-height: 70px;
+    width: 50%;
+    border-top: 1px solid grey;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.loginForm, .joinForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    width: 50%;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.Lselected {
+    border-right: 1px solid gray;
+    height: 100%;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #41c47b;
+    background-color: white;
+    border-bottom: white;
+}
+
+.Rselected {
+    border-left: 1px solid gray;
+    height: 100%;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #41c47b;
+    background-color: white;
+}
+
+.unselected {
+    border-bottom: 1px solid gray;
+    height: 100%;
+    min-height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #F8F8F8;
+    transition: color 0.3s ease;
+}
+
+#selectA, #selectB{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#selectA>h1:hover, #selectB>h1:hover{
+    color: #41c47b;
+}
+
+#form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#form > div > h3 {
+    font-size: 2em;
+}
+
+#form > div > input, #userGender, #agentGender, #regionCode, #categoryCode{
+    height: 50px;
+    font-size: 1.3em;
+    padding-left: 15px;
+}
+
+#form > div:last-child > button {
+    padding: 30px 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+}
+
+#form > div:last-child > button:hover {
+    cursor: pointer;
+    color: #888aff;
+}
+
+
+#final {
+    background-color: #41c47b;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5%;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+#final:hover {
+    color: #41c47b;
+    background-color: white;
+}
+
+#topic {
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.moveBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+.moveBtn>h4>a{
+    padding-right: 5px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease;
+}
+.moveBtn>h4>a:hover{
+    color: #41c47b;
+}
+
+#FnA-table {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+#FnA-table > tbody {
+    width: 100%;
+}
+
+#FnA-table > tbody > tr {
+    display: flex;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    font-size: 2em;
+}
+#fna-div {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    background-color: #fcfbf4;
+}
+
+#fnaContents {
+    resize: none;
+    width: 100%;
+    height: fit-content;
+    min-height: 400px;
+    border: none;
+    font-size: 2em;
+}
+
+#FnA-table > tbody > tr > td:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    background-color: #faf8ea;
+    width: 5%;
+}
+
+#FnA-table > tbody > tr > td:last-child {
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+#answerContent{
+    padding: 30px;
+}
+
+#FnA-table > tbody > tr > td:last-child > a {
+    text-decoration: none;
+    color: gray;
+}
+
+#FnA-table > tbody > tr > td:last-child > a:hover {
+    color: #41c47b;
+}
+#introduce-join{
+    height: 300px;
+    resize: none;
+    font-size: 1.5em;
+    padding-left: 15px;
+}
+
+#agentImage{
+    max-width: 300px;
+    max-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+#previewImage{
+    max-width: 20%;
+    max-height: 20%;
+    background-size: cover;
+    background-position: center;
+}
+
+#fna_Board>tr>td:last-child{
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#fna_Board>tr>td:last-child:hover{
+    color: #349a57;
+}

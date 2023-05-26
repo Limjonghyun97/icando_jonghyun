@@ -1,0 +1,54 @@
+.footer {
+    /* position: absolute;  /* 페이지의 가장 하단에 위치하도록 절대 위치 지정 */
+    bottom: 0px;  /* 페이지 하단에 붙이기 */
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    z-index: 2;  /* 다른 요소들 위에 위치하도록 z-index값 지정 */
+    margin-top: 100px;
+}
+
+.footer>div {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+
+}
+
+.footer>div>div:first-child{
+    padding-top: 50px;
+}
+.footer>div>div:last-child {
+    padding-top: 30px;
+}
+
+.footer>div>div:first-child>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.kakaoIcon{
+    height: 1.2em;
+    vertical-align: middle;
+}
+
+.content-title {
+    padding-bottom: 10px;
+}
+
+.profile{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.profile> div:last-child>button{
+   background-color: white;
+    color: black;
+}
+.profile> div:last-child>button:hover{
+    background-color: #fcde7b;
+    color: black;
+}

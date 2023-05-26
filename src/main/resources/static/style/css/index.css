@@ -1,0 +1,261 @@
+body, html {
+    height: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    overflow-x: hidden;
+    background-color: black;
+}
+aside>div{
+    width: 100%;
+}
+aside>div>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+a, button {
+    cursor: pointer;
+}
+
+#board-form{
+    width: 100%;
+}
+
+
+#main-board-title, #recommend-board-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#main-board, #recommend-board {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+.moreBtn {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+#agentMore, #reviewMoreBtn{
+    display: flex;
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #41c47b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#agentMore:hover, #reviewMoreBtn:hover{
+    background-color: #349a57;
+}
+
+#agentMore:focus, #reviewMoreBtn:focus {
+    outline: none;
+}
+
+.board-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    flex-grow: 0;
+    padding-bottom: 30px;
+}
+
+.board-content > div:first-child {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-content > div:nth-child(2) {
+    width: 100%;
+}
+
+.board-content > div:nth-child(3) {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.board-content > div:nth-child(4) > span {
+    color: #8800A1;
+    font-weight: bold;
+}
+
+.board-content > div:nth-child(4) {
+    border-bottom: 1px solid gray;
+    color: gray;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+.board-content > div:nth-child(5) {
+    color: gray;
+    width: 100%;
+}
+
+.board-content > div:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.board-content > div:nth-child(6) > div:first-child {
+    font-weight: bold;
+    color: #ff6137;
+    font-size: 1.2em;
+}
+
+.board-content > div:nth-child(6) > div:last-child {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.board-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+.board-content>div {
+    font-size: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.carousel {
+    height: 300px;
+}
+.carousel>div{
+
+}
+.carousel>div>a>img {
+    width: 200px; height: 130px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    object-fit: contain;
+}
+.carousel-item{
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.carousel-item > h1 {
+    height: 100px;
+    width: auto;
+    max-height: 100px;
+    color: black;
+    overflow: hidden;
+    background-color: white;
+    font-size: 2em;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.2);
+    object-fit: cover;
+}
+
+.board-img{
+    border-radius: 8px;
+    width: 98%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#ad {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.ad-img {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#search-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80vw;
+    margin: 150px auto 0px;
+    height: fit-content;
+    min-height: 500px;
+}
+#search-section>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+#main-board-top{
+    width: 100%;
+}
+
+#pageCount{
+    text-align: center;
+}
+
+#board-table{
+    width: 100%;
+}
+
+#board-table>tbody{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content: center;
+    width: 100%;
+}
+
+#reviewBored{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 150px auto 300px;
+    height: fit-content;
+}
