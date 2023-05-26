@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.springframework.boot' version '2.7.12-SNAPSHOT'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
+    maven { url "https://maven.google.com" }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // jsp 페이지 사용을 위한 의존성 추가
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.69'
+    implementation 'javax.servlet:jstl:1.2'
+    implementation 'taglibs:standard:1.1.2'
+
+    // mysql connector
+    implementation 'mysql:mysql-connector-java:8.0.28'
+
+    // jpa
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.5'
+
+    // 화면 슬라이드
+
+    // 파이어베이스
+    implementation 'com.google.firebase:firebase-admin:9.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
